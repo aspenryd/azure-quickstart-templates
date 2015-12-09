@@ -1,5 +1,6 @@
 # Deployment of Kibana+Elasticsearch Containers with Docker Compose
 
+These templates are taken from <a href="https://github.com/Azure/azure-quickstart-templates/tree/master/docker-kibana-elasticsearch">The github Azure account</a>, I have just added North Europe as a possible region
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Faspenryd%2Fazure-quickstart-templates%2Fmaster%2Fdocker-kibana-elasticsearch%2Fazuredeploy.json" target="_blank">
 	<img src="http://azuredeploy.net/deploybutton.png"/>
