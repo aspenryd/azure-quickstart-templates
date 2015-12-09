@@ -146,7 +146,7 @@
       "properties": {
         "securityRules": [
           {
-            "name": "http",
+            "name": "httpkibana",
             "properties": {
               "description": "Allow HTTP",
               "protocol": "Tcp",
@@ -160,6 +160,20 @@
             }
           },
           {
+            "name": "httpelasticsearch",
+            "properties": {
+              "description": "Allow HTTP",
+              "protocol": "Tcp",
+              "sourcePortRange": "*",
+              "destinationPortRange": "9200",
+              "sourceAddressPrefix": "Internet",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 110,
+              "direction": "Inbound"
+            }
+          },
+          {
             "name": "ssh",
             "properties": {
               "description": "Allow SSH",
@@ -169,7 +183,7 @@
               "sourceAddressPrefix": "Internet",
               "destinationAddressPrefix": "*",
               "access": "Allow",
-              "priority": 110,
+              "priority": 120,
               "direction": "Inbound"
             }
           }
